@@ -1,0 +1,11 @@
+# node_modules & build output
+node_modules/
+dist/
+
+# Devvit local state
+.devvit/
+
+# Env
+.env
+.env.*
+!.env.example

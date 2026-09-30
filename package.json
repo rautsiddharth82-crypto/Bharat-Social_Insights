@@ -1,0 +1,18 @@
+{
+  "name": "bharat-social-insights-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspace=apps/Client",
+    "dev:orchestrator": "npm run dev --workspace=apps/orchestrator"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "typescript": "^5.3.3",
+    "vite": "^8.3.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Bharat Social Insights",
+  "description": "AI-powered enterprise social media intelligence dashboard for multi-platform narrative, sentiment, and rumor tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

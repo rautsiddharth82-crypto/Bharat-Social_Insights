@@ -1,0 +1,23 @@
+{
+  "name": "bsi-reddit-devvit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Devvit Reddit App that streams Indian subreddit posts into the Bharat Social Insights orchestrator.",
+  "type": "module",
+  "scripts": {
+    "dev": "devvit playtest bsi_test_sub",
+    "deploy": "devvit upload",
+    "build:server": "esbuild src/server/index.ts --bundle --platform=node --format=cjs --outfile=dist/server/index.js"
+  },
+  "dependencies": {
+    "@devvit/public-api": "^0.14.6",
+    "@devvit/web": "^0.14.6",
+    "@hono/node-server": "^2.1.3",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.3.3"
+  }
+}
