@@ -2,7 +2,8 @@
 // app is deployed (Vercel) there is no proxy, so VITE_API_BASE_URL points straight
 // at the deployed orchestrator (Render). No trailing slash.
 const BASE_URL: string =
-  (import.meta as any).env?.VITE_API_BASE_URL?.replace(/\/$/, '') || '/api';
+  (import.meta as any).env?.VITE_API_BASE_URL?.replace(/\/$/, '') ||
+  (import.meta.env.PROD ? 'https://bsi-orchestrator.onrender.com' : '/api');
 
 import type {
   AuditLogResponse,
