@@ -42,6 +42,16 @@ async function start() {
 
     await registerRoutes(fastify);
 
+    fastify.get("/", async () => ({
+      service: "Bharat Social Insights - Orchestrator API (Lite)",
+      status: "healthy",
+      version: "1.0.0"
+    }));
+
+    fastify.get("/favicon.ico", async (req, reply) => {
+      reply.code(204).send();
+    });
+
     fastify.get("/health", async () => ({
       status: "healthy",
       service: "orchestrator-lite",

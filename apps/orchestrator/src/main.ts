@@ -83,6 +83,28 @@ async function start() {
 
     await registerRoutes(fastify);
 
+    fastify.get("/", async () => ({
+      service: "Bharat Social Insights - Orchestrator API",
+      status: "healthy",
+      version: "1.0.0",
+      description: "NTRO AI Social Media Analytics Platform backend orchestrator",
+      endpoints: {
+        health: "/health",
+        pipeline: "/system/pipeline",
+        stats_overview: "/stats/overview",
+        alerts: "/alerts",
+        live_posts: "/posts/live",
+        facets: "/posts/facets",
+        demographics: "/demographics/summary",
+        trends: "/trends",
+        audit_log: "/admin/audit-log"
+      }
+    }));
+
+    fastify.get("/favicon.ico", async (req, reply) => {
+      reply.code(204).send();
+    });
+
     fastify.get("/health", async () => ({ status: "healthy", service: "orchestrator", nextCollectionMs: COLLECTION_INTERVAL_MS }));
 
     await fastify.listen({ port: config.port, host: "0.0.0.0" });
