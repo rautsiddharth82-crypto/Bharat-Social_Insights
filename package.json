@@ -8,7 +8,8 @@
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "dev": "npm run dev --workspace=apps/Client",
-    "dev:orchestrator": "npm run dev --workspace=apps/orchestrator"
+    "dev:orchestrator": "npm run dev --workspace=apps/orchestrator",
+    "generate:telegram-session": "node apps/orchestrator/dist/generateTelegramSession.js"
   },
   "devDependencies": {
     "concurrently": "^10.0.5",
