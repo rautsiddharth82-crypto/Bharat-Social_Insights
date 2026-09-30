@@ -19,7 +19,23 @@ app = FastAPI(
 
 @app.on_event("startup")
 def startup_event():
-    model_registry.load_all_models()
+    try:
+        model_registry.load_all_models()
+    except Exception as e:
+        logger.warning(f"Startup init error: {e}")
+
+@app.get("/")
+def root():
+    return {
+        "service": "Bharat Social Insights - ML Microservice",
+        "status": "healthy",
+        "version": "1.0.0",
+        "models": {
+            "sentiment": model_registry.sentiment_version,
+            "stance": model_registry.stance_version,
+            "embeddings": model_registry.embedding_version
+        }
+    }
 
 @app.get("/health")
 def health_check():
