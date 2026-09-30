@@ -23,11 +23,11 @@
     "googleapis": "^134.0.0",
     "snoowrap": "^1.23.0",
     "axios": "^1.6.8",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
-    "@types/pg": "^8.11.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   }
