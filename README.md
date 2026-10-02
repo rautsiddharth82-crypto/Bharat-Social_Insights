@@ -65,7 +65,8 @@
   - [12.1 Deploying Orchestrator to Render](#121-deploying-orchestrator-to-render)
   - [12.2 Deploying ML Microservice to Render](#122-deploying-ml-microservice-to-render)
   - [12.3 Deploying Frontend to Vercel](#123-deploying-frontend-to-vercel)
-- [13. License & Security Contact](#13-license--security-contact)
+- [13. Project Team & Core Leadership](#13-project-team--core-leadership)
+- [14. License & Security Contact](#14-license--security-contact)
 
 ---
 
@@ -503,8 +504,28 @@ npm run build
 
 ---
 
-## 13. License & Security Contact
+## 13. Project Team & Core Leadership
+
+> [!NOTE]
+> ### 🏆 Bharat Social Insights — Executive Engineering & Leadership Team
+> **Smart India Hackathon 2026** | **National Technical Research Organisation (NTRO ID: 26152)**
+
+| Team Member | Role & Specialization | Core Responsibilities & Technical Impact |
+| :--- | :--- | :--- |
+| **Gunjan Jain** | **Team Leader**<br>`Solution Architecture` | **Strategic Leadership & Systems Governance**<br>• End-to-end system orchestration, milestone execution & institutional governance<br>• High-level solution strategy for NTRO Problem Statement 26152<br>• Stakeholder alignment, national security compliance & final defense presentation engineering |
+| **Hardik Mathur** | **Lead Backend Engineer**<br>`Systems & Infrastructure` | **Core Orchestrator & Multi-Cloud Infrastructure**<br>• Architected Fastify asynchronous REST orchestrator & TimescaleDB/Neon hypertables pipeline<br>• Built BullMQ Redis 7 stream workers & 5-platform social harvest collectors with automated fallback<br>• Engineered Neo4j 5 AuraDB graph topology, GDS PageRank algorithms & Docker/Render DevOps |
+| **Abhyuday Jain** | **Lead AI/ML Engineer**<br>`NLP & Deep Learning` | **Indic NLP & Transformer Architecture**<br>• Architected Python FastAPI ML microservice with memory-optimized inference engines<br>• Implemented multilingual Indian sentiment engine with 6-emotion heads (anxiety, anger, sarcasm...)<br>• Engineered Zero-Shot NLI stance classification (`distilbert-mnli`) & MiniLM topic vector clustering |
+| **Siddharth Raut** | **Lead UI/UX & Full-Stack Engineer**<br>`Frontend & Design System` | **Command Center Architecture & Interaction Design**<br>• Designed React 19 + Vite 8 & TailwindCSS defense command center dashboard<br>• Built Rumor Radar severity scoring, interactive Neo4j network graph canvas & live signal feeds<br>• Developed bilingual i18n engine (English/Devanagari Hindi) & fail-safe API integration |
+| **Chitra Saini** | **Lead Graphic Designer**<br>`Visual Identity & UI Assets` | **Brand Identity & Intelligence Design System**<br>• Created visual brand identity, defense telemetry color palettes & typography standards<br>• Designed custom intelligence assets, system architecture diagrams & situational UI visuals<br>• Refined user interface consistency, micro-animations & visual presentation polish |
+| **Vaidehi Nagda** | **Policy & Problem Research Analyst**<br>`Domain Intelligence & Security` | **National Security Research & Governance Compliance**<br>• Conducted NTRO operational research on disinformation propagation & social narrative warfare<br>• Formulated server-side $k$-anonymity ($k \ge 5$) framework & tamper-evident audit logging rules<br>• Ensured institutional defense standards compliance, analytical verification & intelligence reporting |
+
+<br>
+
+---
+
+## 14. License & Security Contact
 
 * **License**: Released under the **MIT License**. See `LICENSE` for details.
 * **Institutional Governance**: Built for research and operational prototype assessment under **SIH PS 26152**.
 * **Security & Vulnerability Reporting**: For institutional inquiries or security disclosures, submit an issue to the official GitHub repository: [rautsiddharth82-crypto/Bharat-Social_Insights](https://github.com/rautsiddharth82-crypto/Bharat-Social_Insights).
+
